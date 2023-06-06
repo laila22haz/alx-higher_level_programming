@@ -1,10 +1,10 @@
 #include <stdio.h>
+#include "lists.h"
 #include <stdlib.h>
 /**
-*check_cycle - check if the list had a cycle
-*@list : the first element
-*
-*Return : 1 (SUCCESS) 0 (OTHERWISE)
+ * check_cycle - check if the list has a cycle in it
+ * @list : the first element
+ * Return : 1 (SUCCESS) 0 (OTHERWISE)
 */
 int check_cycle(listint_t *list)
 {
@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 	ptr = list;
 	temp = list;
 
-	while(ptr != NULL && temp != NULL && temp->next != NULL)
+	while (ptr != NULL && temp != NULL && temp->next != NULL)
 	{
 		ptr = ptr->next;
 		temp = temp->next->next;

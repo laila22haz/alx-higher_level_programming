@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-for i in alphabet:
-    print(i, end="")
+res = " "
+for i in range(97, 123):
+	res = chr(i)
+	print(res, end="")

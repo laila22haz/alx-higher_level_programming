@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
 /**
  * check_cycle - check if the list has a cycle in it
  * @list : the first element

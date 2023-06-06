@@ -1,13 +1,15 @@
 #include "lists.h"
+
 /**
- * check_cycle - check if the list has a cycle in it
+ * check_cycle - check if a singly linked list has a cycle in it
  * @list : the first element
  * Return : 1 (SUCCESS) 0 (OTHERWISE)
-*/
+ */
+
 int check_cycle(listint_t *list)
 {
-	listint_t *ptr == NULL;
-	listint_t *temp == NULL;
+	listint_t *ptr = NULL;
+	listint_t *temp = NULL;
 
 	if (list == NULL)
 		return (0);

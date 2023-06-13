@@ -4,5 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         for colomn in range(len(matrix[row])):
             if colomn != 0:
                 print(" ", end='')
-            print("{}".format(matrix[row][colomn]), end='')
-        print()
+            print("{:d}".format(matrix[row][colomn]), end='')
+        print("$")

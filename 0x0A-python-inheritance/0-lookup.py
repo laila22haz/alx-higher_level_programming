@@ -2,4 +2,4 @@
 def lookup(obj):
     '''returns the listof available attributes and methods'''
 
-    print(dir(obj))
+    return (dir(obj))

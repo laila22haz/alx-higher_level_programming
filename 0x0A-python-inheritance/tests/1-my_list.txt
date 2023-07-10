@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+>>>MyList = __import__('1-my_list').MyList
+
+>>>my_list = MyList()
+>>>my_list.print_sorted()
+
+>>>my_list = MyList([-1, -2, -3])
+>>>my_list.print_sorted()
+[-3, -2, -1]
+>>>my_list.append(['l','a','i','l','a'])
+>>>my_list.print_sorted()
+['a','a','i','l']
+
+
+
+

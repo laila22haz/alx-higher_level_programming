@@ -5,6 +5,5 @@ of the class that inherited from"""
 
 def is_kind_of_class(obj, a_class):
     """Return True in sucsess and False otherwise"""
-    if isinstance(obj, a_class):
-        return True
-    False
+    return isinstance(obj, a_class)
+

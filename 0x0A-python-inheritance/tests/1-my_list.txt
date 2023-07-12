@@ -6,15 +6,15 @@ Use ``print_sorted`` methode
 ----------------------
 
 Importing the class from the module: 
->>> MyList = _import_("1-my_list").MyList 
-  
+>>> MyList = __import__("1-my_list").MyList 
+
  Checking for module docstring: 
->>> m = _import("1-my_list").doc_ 
+>>> m = __import__("1-my_list").doc__
 >>> len(m) > 1 
 True 
   
  Checking for function docstring: 
->>> f = _import("1-my_list").MyList.doc_ 
+>>> f = __import__("1-my_list").MyList.doc__ 
 >>> len(f) > 1 
 True
 

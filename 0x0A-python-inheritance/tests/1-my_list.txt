@@ -5,7 +5,18 @@ Using ``MyList`` class
 Use ``print_sorted`` methode
 ----------------------
 
-MyList = import('1-my_list').MyList
+Importing the class from the module: 
+>>> MyList = _import_("1-my_list").MyList 
+  
+ Checking for module docstring: 
+>>> m = _import("1-my_list").doc_ 
+>>> len(m) > 1 
+True 
+  
+ Checking for function docstring: 
+>>> f = _import("1-my_list").MyList.doc_ 
+>>> len(f) > 1 
+True
 
 >>>my_list = MyList()
 >>>my_list.append(1)

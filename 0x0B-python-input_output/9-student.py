@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+# Made by MEGATRON
 """
 
 Contains class Student
-that initializes public instance attributes first_name,
-last_name, and age, & has public method to_json
-that returns dictionaryrepresentation of requested
-attributes or all if none were requested
+that initializes public instance attributes
+first_name, last_name, and age,
+& has public method to_json that retrieves
+its dictionary representation
 """
 
 
@@ -27,21 +28,10 @@ class Student():
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=None):
+    def to_json(self):
         """
         Returns dictionary description with simple data structure
         (list, dictionary, dictionary, str)
         for JSON serialization of an obj
-
-        Return:
-            Only return dict of attrs given to us
-            Return entire dict if no attrs given
         """
-        if attrs is None:
-            return self.__dict__
-        else:
-            dic = {}
-            for att in attrs:
-                if att in self.__dict__.keys():
-                    dic[att] = self.__dict__[att]
-            return dic
+        return self.__dict__

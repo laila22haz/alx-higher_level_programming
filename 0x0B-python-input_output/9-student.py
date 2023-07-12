@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Made by MEGATRON
 """
 
 Contains class Student

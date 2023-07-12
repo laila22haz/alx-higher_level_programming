@@ -1,40 +1,57 @@
-MyList = __import__('1-my_list').MyList
+The ``1--my_list`` module
+Importing the class from the module: 
+>>> MyList = __import__("1-my_list").MyList 
+
+ Checking for module docstring: 
+>>> m = __import__("1-my_list").doc__
+>>> len(m) > 1 
+True 
+  
+ Checking for function docstring: 
+>>> f = __import__("1-my_list").MyList.doc__ 
+>>> len(f) > 1 
+True
+
+>>>my_list = MyList()
+>>>my_list.append(1)
+>>>my_list.append(4)
+>>>my_list.append(2)
+>>>my_list.append(3)
+>>>my_list.append(5)
+>>>print(my_list)
+[1, 4, 2, 3, 5]
+>>>my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>>print(my_list)
+[1, 4, 2, 3, 5]
 
 
-    >>> my_list = MyList()
+>>>my_list = MyList([])
+>>>my_list.print_sorted()
+[]
 
-    >>> my_list.append(1)
+>>>my_list = MyList([-1, -2, -3])
+>>>my_list
+[-1, -2, -3]
+>>>my_list.print_sorted()
+[-3, -2, -1]
 
-    >>> my_list.append(4)
+>>>my_list = MyList("laila")
+>>>my_list
+['l','a','i','l','a']
+>>>my_list.print_sorted()
+['a','a','i','l', 'l']
 
-    >>> my_list.append(2)
+>>>my_list = MyList([1, 2, 3, 5])
+>>>my_list
+[1, 2, 3, 5]
 
-    >>> my_list.append(3)
+>>>my_list = MyList([1, 2, 6, 5, 4])
+>>>my_list
+[1, 2, 6, 5, 4]
+>>>my_list.print_sorted()
+[1, 2, 4, 5, 6]
 
-    >>> my_list.append(5)
->>> print(my_list)
-    [1, 4, 2, 3, 5]
->>> my_list.print_sorted()
-    [1, 2, 3, 4, 5]
->>> print(my_list)
-    [1, 4, 2, 3, 5]
->>> my_list.clear()
->>> my_list.append(-1)
-
-    >>> my_list.append(4)
-
-    >>> my_list.append(100)
-
-    >>> my_list.append(-3)
-
-    >>> my_list.append(0)
-
->>> print(my_list)
-    [-1, 4, 100, -3, 0]
->>> my_list.print_sorted()
-    [-3, -1, 0, 4, 100]
->>> print(my_list)
-    [-1, 4, 100, -3, 0]
->>> my_list.clear()
->>> my_list.print_sorted()
-    []
+>>>my_list = MyList([1])
+>>>my_list
+[1]

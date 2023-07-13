@@ -2,13 +2,13 @@ Importing the class from the module:
 >>> MyList = __import__("1-my_list").MyList 
 
 Checking for module docstring: 
->>> m = __import__("1-my_list").doc__
->>> len(m) > 1 
-True 
+>>> m = __import__("1-my_list").__doc__
+>>> len(m) > 1
+True
   
 Checking for function docstring: 
->>> f = __import__("1-my_list").MyList.doc__ 
->>> len(f) > 1 
+>>> f = __import__("1-my_list").MyList.__doc__ 
+>>> len(f) > 1
 True
 
 >>> my_list = MyList()

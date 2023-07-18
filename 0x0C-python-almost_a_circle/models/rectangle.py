@@ -4,8 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle Class that inherits from Base.
+    """Rectangle Class that inherits from Base.
 
     Attributes:
         id (int): Identifier of the rectangle.
@@ -109,8 +108,8 @@ class Rectangle(Base):
         Updates the Rectangle's attributes with new values.
 
         Args:
-            *args: Variable length argument list. If provided, accepts arguments in the order: id, width, height, x, y.
-            **kwargs: Arbitrary keyword arguments. If provided, accepts arguments as key-value pairs: id=value, width=value, height=value, x=value, y=value.
+            *args: Variable length argument list.
+            **kwargs: Arbitrary keyword arguments.
         """
         if args and len(args) != 0:
             a = 0
@@ -150,8 +149,6 @@ class Rectangle(Base):
         """
         Returns a string representation of the Rectangle.
 
-        The string representation includes the class name, id, x, y, width, and height of the Rectangle.
-
         Returns:
             str: String representation of the Rectangle.
         """
@@ -161,8 +158,6 @@ class Rectangle(Base):
     def to_dictionary(self):
         """
         Returns the dictionary representation of the Rectangle.
-
-        The dictionary representation includes the id, width, height, x, and y attributes of the Rectangle.
 
         Returns:
             dict: Dictionary representation of the Rectangle.

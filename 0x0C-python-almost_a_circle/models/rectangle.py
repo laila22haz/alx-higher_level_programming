@@ -1,10 +1,9 @@
-#!/usr/bin/python3
-"""build class"""
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle Class that inherits from Base.
+    """
+    Rectangle Class that inherits from Base.
 
     Attributes:
         id (int): Identifier of the rectangle.
@@ -15,14 +14,15 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle.
+        """
+        Initializes a Rectangle instance.
 
         Args:
-            width (int): The width.
-            height (int): The height.
-            x (int): The x coordinate.
-            y (int): The y coordinate.
-            id (int): The identity.
+            width (int): Width of the rectangle.
+            height (int): Height of the rectangle.
+            x (int, optional): x-coordinate
+            y (int, optional): y-coordinate
+            id (int, optional): Identifier
         """
         super().__init__(id)
         self.width = width
@@ -97,7 +97,6 @@ class Rectangle(Base):
 
         The display all attributes of the Rectangle.
         """
-
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
@@ -149,16 +148,20 @@ class Rectangle(Base):
         """
         Returns a string representation of the Rectangle.
 
+        The string representation
+
         Returns:
             str: String representation of the Rectangle.
         """
         class_name = type(self).__name__
-        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y} - \
-{self.__width}/{self.__height}"
+        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y}\
+- {self.__width}/{self.__height}"
 
     def to_dictionary(self):
         """
         Returns the dictionary representation of the Rectangle.
+
+        The dictionary representation
 
         Returns:
             dict: Dictionary representation of the Rectangle.

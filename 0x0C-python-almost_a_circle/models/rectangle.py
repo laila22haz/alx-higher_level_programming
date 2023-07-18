@@ -156,7 +156,7 @@ class Rectangle(Base):
             str: String representation of the Rectangle.
         """
         class_name = type(self).__name__
-        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y}- \
+        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
     def to_dictionary(self):

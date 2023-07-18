@@ -20,9 +20,9 @@ class Square(Rectangle):
 
         Args:
             size (int): Size of the square (equal width and height).
-            x (int, optional): x-coordinate of the square's position. Defaults to 0.
-            y (int, optional): y-coordinate of the square's position. Defaults to 0.
-            id (int, optional): Identifier of the square. Defaults to None.
+            x (int, optional): x-coordinate
+            y (int, optional): y-coordinate
+            id (int, optional): Identifier
         """
         super().__init__(size, size, x, y, id)
 
@@ -42,8 +42,8 @@ class Square(Rectangle):
         Updates the square's attributes with new values.
 
         Args:
-            *args: Variable length argument list. If provided, accepts arguments in the order: id, size, x, y.
-            **kwargs: Arbitrary keyword arguments. If provided, accepts arguments as key-value pairs: id=value, size=value, x=value, y=value.
+            *args: Variable length argument list
+            **kwargs: Arbitrary keyword arguments.
         """
         if args and len(args) != 0:
             a = 0
@@ -79,7 +79,7 @@ class Square(Rectangle):
         """
         Returns a string representation of the Square.
 
-        The string representation includes the class name, id, x, y, and size of the Square.
+        The string representation
 
         Returns:
             str: String representation of the Square.
@@ -91,10 +91,9 @@ class Square(Rectangle):
         """
         Returns the dictionary representation of the Square.
 
-        The dictionary representation includes the id, size, x, and y attributes of the Square.
+        The dictionary representation
 
         Returns:
             dict: Dictionary representation of the Square.
         """
         return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
-

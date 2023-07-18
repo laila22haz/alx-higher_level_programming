@@ -15,15 +15,14 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Initializes a Rectangle instance.
+        """Initialize a new Rectangle.
 
         Args:
-            width (int): Width of the rectangle.
-            height (int): Height of the rectangle.
-            x (int, optional): x-coordinate of the rectangle's position. Defaults to 0.
-            y (int, optional): y-coordinate of the rectangle's position. Defaults to 0.
-            id (int, optional): Identifier of the rectangle. Defaults to None.
+            width (int): The width.
+            height (int): The height.
+            x (int): The x coordinate.
+            y (int): The y coordinate.
+            id (int): The identity.
         """
         super().__init__(id)
         self.width = width
@@ -96,8 +95,9 @@ class Rectangle(Base):
         """
         Displays the Rectangle using '#' characters.
 
-        The display is based on the width, height, x, and y attributes of the Rectangle.
+        The display all attributes of the Rectangle.
         """
+
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
@@ -153,7 +153,8 @@ class Rectangle(Base):
             str: String representation of the Rectangle.
         """
         class_name = type(self).__name__
-        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return f"[{class_name}] ({self.id}) {self.__x}/{self.__y} - \
+{self.__width}/{self.__height}"
 
     def to_dictionary(self):
         """
@@ -162,4 +163,5 @@ class Rectangle(Base):
         Returns:
             dict: Dictionary representation of the Rectangle.
         """
-        return {'id': self.id, 'width': self.width, 'height': self.height, 'x': self.x, 'y': self.y}
+        return {'id': self.id, 'width': self.width,
+                'height': self.height, 'x': self.x, 'y': self.y}

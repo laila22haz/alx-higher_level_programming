@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""build class"""
 from models.base import Base
 
 

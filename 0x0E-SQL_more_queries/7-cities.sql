@@ -4,5 +4,5 @@ CREATE TABLE IF NOT EXISTS cities (
     id int AUTO_INCREMENT NOT NULL PRIMARY KEY,
     state_id int NOT NULL,
     name VARCHAR(256) NOT NULL,
-    FOREIGN KEY(id) REFERENCES states(id)
+    FOREIGN KEY(state_id) REFERENCES states(state_id)
 );

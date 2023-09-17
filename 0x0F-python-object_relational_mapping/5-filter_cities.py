@@ -19,6 +19,6 @@ if __name__ == "__main__":
         ORDER BY cities.id ASC", {'state_name': state_name})
     my_city = cursor.fetchall()
     for city in my_city:
-        print(city[0])
+        print(city[0], end=", ")
     cursor.close()
     db.close()

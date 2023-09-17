@@ -18,7 +18,7 @@ if __name__ == "__main__":
         WHERE states.name LIKE %(state_name)s \
         ORDER BY cities.id ASC", {'state_name': state_name})
     my_city = cursor.fetchall()
-    for city in my_city:
-        print(city[0], end=", ")
+    temp = (city[0] for city in my_city)
+    print(", ".join(temp))
     cursor.close()
     db.close()

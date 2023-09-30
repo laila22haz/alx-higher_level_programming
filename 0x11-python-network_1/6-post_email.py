@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" module doc """
+"""  POST an email #1 
+"""
 import requests
 import sys
 
